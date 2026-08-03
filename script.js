@@ -24,8 +24,9 @@ function movieCard(movie, featured = false) {
     ? `<img src="${escapeAttribute(movie.posterUrl)}" alt="${escapeHtml(movie.title)} poster" loading="lazy" decoding="async">`
     : '';
   const posterLabel = movie.posterUrl ? `Poster for ${movie.title}` : `Stylized placeholder poster for ${movie.title}`;
+  const posterTitle = movie.posterUrl ? '' : `data-title="${escapeHtml(movie.title)}"`;
   article.innerHTML = `
-    <div class="poster ${movie.posterStyle}${movie.posterUrl ? ' poster-real' : ''}" data-title="${escapeHtml(movie.title)}" role="img" aria-label="${escapeHtml(posterLabel)}">${posterContent}</div>
+    <div class="poster ${movie.posterStyle}${movie.posterUrl ? ' poster-real' : ''}" ${posterTitle} role="img" aria-label="${escapeHtml(posterLabel)}">${posterContent}</div>
     <div class="movie-body">
       <div class="movie-meta">
         <span class="badge">${escapeHtml(movie.category)}</span>

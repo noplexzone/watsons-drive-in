@@ -31,6 +31,16 @@ if (!movies.movies.some((movie) => movie.title === 'Jaws')) failures.push('Missi
 if (!movies.featured || !movies.movies.some((movie) => movie.id === movies.featured)) failures.push('Featured movie id must match a movie.');
 if (!movies.movies.some((movie) => movie.tmdbQuery || movie.tmdbId)) failures.push('At least one movie should be configured for TMDB poster enrichment.');
 
+if (/\bdusk\b/i.test(html) || movies.movies.some((movie) => /\bdusk\b/i.test(movie.time || ''))) {
+  failures.push('Dusk references should be replaced with 7 PM for now.');
+}
+for (const movie of movies.movies) {
+  if (/sample|placeholder|potential crowd-pleasing|premium preview card/i.test(movie.summary || '')) {
+    failures.push(`Movie summary still looks placeholder-like: ${movie.title}`);
+  }
+}
+if (!css.includes('border: 0') || !css.includes('object-fit: contain')) failures.push('Poster cards should remove borders and avoid cropped poster artwork.');
+
 if (html.includes('SAU')) failures.push('SAU references should not appear while the venue copy is intentionally generic.');
 for (const text of ['Pets are not allowed', 'Alcohol is not allowed', '$7', '$4', '$5', '$12']) {
   if (!html.includes(text)) failures.push(`Missing required updated operations copy: ${text}`);

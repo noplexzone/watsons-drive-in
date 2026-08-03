@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Build-time TMDB poster enrichment for configured movie listings, with TMDB attribution and placeholder fallback art.
 
 ### Changed
+- Fix real poster artwork rendering so TMDB posters are uncropped, unobscured, and borderless.
+- Replace placeholder movie descriptions with real listing copy and change temporary showtime references from dusk to 7 PM.
 - Remove SAU-specific copy, disallow pets except required service animals, clarify no-alcohol policy, and add placeholder concession prices.
 - Initial static Watson’s Drive-In website with 1950s neon styling, placeholder listings, tickets, concessions, event/rental, sponsorship, employment, FAQ, and contact sections.
 - Static verification script for required assets, sections, data, and safety checks.
