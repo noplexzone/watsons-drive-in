@@ -58,7 +58,7 @@ Use one of these configurations:
 
 ## Current Cloudflare build failure note
 
-If Cloudflare requires a deploy command, use `npm run deploy`. That script builds the static site into `dist/` and then runs `wrangler pages deploy dist --project-name=watsons-drive-in --branch=main`. If it fails with Cloudflare API `Authentication error [code: 10000]`, the `CLOUDFLARE_API_TOKEN` used by the Pages project lacks the required Pages permission; update the token rather than changing site code.
+If Cloudflare requires a deploy command, use `npm run deploy`. That script builds the static site into `dist/` and then runs `npx wrangler pages deploy dist --project-name=watsons-drive-in --branch=main`. If it fails with Cloudflare API `Authentication error [code: 10000]`, the `CLOUDFLARE_API_TOKEN` used by the Pages project lacks the required Pages permission; update the token rather than changing site code.
 
 ### Required API token permissions
 

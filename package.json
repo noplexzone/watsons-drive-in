@@ -8,6 +8,6 @@
     "check": "node scripts/check-site.mjs",
     "deploy:pages": "npm run deploy",
     "build": "node scripts/build-static.mjs",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=watsons-drive-in --branch=main"
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=watsons-drive-in --branch=main"
   }
 }
