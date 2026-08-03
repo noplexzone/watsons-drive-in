@@ -32,8 +32,8 @@ For the current static version:
 
 - Project name: `watsons-drive-in`
 - Framework preset: None
-- Build command: blank
-- Output directory: `/`
+- Build command: `npm run build`
+- Output directory: `dist`
 - Production branch: `main`
 - Temporary custom domain target: `watsons-drive-in.noplexzone.com`
 
@@ -48,10 +48,14 @@ Use one of these configurations:
 **Recommended Git-connected Pages setup:**
 
 - Framework preset: None
-- Build command: `exit 0` or blank
-- Build output directory: `/`
+- Build command: `npm run build`
+- Build output directory: `dist`
 - Deploy command: blank / Cloudflare default Pages asset upload
 
 **If Cloudflare requires an explicit deploy command:**
 
-- Deploy command: `npx wrangler pages deploy . --project-name=watsons-drive-in`
+- Deploy command: `npx wrangler pages deploy dist --project-name=watsons-drive-in`
+
+## Current Cloudflare build failure note
+
+If the build log says `Executing user deploy command`, remove that deploy command in Cloudflare Pages settings. The Git-connected Pages build already performs the deployment after the build command succeeds. A custom deploy command causes Wrangler to authenticate inside the build and may fail with Cloudflare API token permission errors.

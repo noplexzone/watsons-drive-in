@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
     "check": "node scripts/check-site.mjs",
-    "deploy:pages": "wrangler pages deploy . --project-name=watsons-drive-in"
+    "deploy:pages": "wrangler pages deploy dist --project-name=watsons-drive-in",
+    "build": "node scripts/build-static.mjs"
   }
 }
