@@ -30,9 +30,11 @@ The check validates required files, required page sections, local data shape, an
 
 For the current static version:
 
+- Project name: `watsons-drive-in`
 - Framework preset: None
 - Build command: blank
 - Output directory: `/`
 - Production branch: `main`
+- Temporary custom domain target: `watsons-drive-in.noplexzone.com`
 
-Use a temporary No Plex Zone subdomain until Watson’s Drive-In has its official domain.
+Use the temporary No Plex Zone subdomain until Watson’s Drive-In has its official domain.
