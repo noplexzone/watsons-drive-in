@@ -36,28 +36,38 @@
       "tmdbUrl": "https://www.themoviedb.org/movie/1368337"
     },
     {
-      "id": "family-night",
-      "title": "Retro Family Night",
+      "id": "back-to-the-future",
+      "title": "Back to the Future",
+      "tmdbQuery": "Back to the Future",
+      "releaseYear": 1985,
       "rating": "PG",
-      "runtime": "Double Feature",
-      "date": "Future Event",
+      "runtime": "1h 56m",
+      "date": "Potential Classic Night",
       "time": "Dusk",
-      "category": "Family Night",
+      "category": "Classic Night",
       "posterStyle": "family",
-      "summary": "Classic crowd-pleasers, cartoons before the feature, and a low-stress night out for families.",
-      "trailerUrl": "#events"
+      "summary": "A potential crowd-pleasing throwback for classic movie nights and family-friendly programming.",
+      "trailerUrl": "#tickets",
+      "tmdbId": 105,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg",
+      "tmdbUrl": "https://www.themoviedb.org/movie/105"
     },
     {
-      "id": "midnight-monster-rally",
-      "title": "Midnight Monster Rally",
-      "rating": "PG-13",
-      "runtime": "Late Show",
-      "date": "Future Event",
+      "id": "jaws",
+      "title": "Jaws",
+      "tmdbQuery": "Jaws",
+      "releaseYear": 1975,
+      "rating": "PG",
+      "runtime": "2h 4m",
+      "date": "Potential Late Show",
       "time": "Late Night",
-      "category": "Horror Night",
+      "category": "Thriller Night",
       "posterStyle": "monster",
-      "summary": "A neon-lit late-night series built for SAU students, horror fans, and classic creature-feature crowds.",
-      "trailerUrl": "#events"
+      "summary": "A potential summer thriller pick for late shows, throwback nights, and special event programming.",
+      "trailerUrl": "#tickets",
+      "tmdbId": 578,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+      "tmdbUrl": "https://www.themoviedb.org/movie/578"
     }
   ]
 }

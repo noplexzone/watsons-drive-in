@@ -19,15 +19,22 @@ for (const id of requiredSections) {
   if (!html.includes(`id="${id}"`)) failures.push(`Missing required section id: ${id}`);
 }
 
-for (const text of ['Watson’s Drive-In', 'Coming soon near Magnolia', 'Tickets Coming Soon', 'Mobile Ordering Coming Soon', 'SAU', 'uses TMDB and the TMDB APIs']) {
+for (const text of ['Watson’s Drive-In', 'Coming soon near Magnolia', 'Tickets Coming Soon', 'Mobile Ordering Coming Soon', 'uses TMDB and the TMDB APIs']) {
   if (!html.includes(text)) failures.push(`Missing required copy: ${text}`);
 }
 
 if (!Array.isArray(movies.movies) || movies.movies.length < 4) failures.push('Movie data must include at least four placeholder listings.');
 if (!movies.movies.some((movie) => movie.title === 'Spider-Man: Brand New Day')) failures.push('Missing Spider-Man placeholder listing.');
 if (!movies.movies.some((movie) => movie.title === 'The Odyssey')) failures.push('Missing The Odyssey placeholder listing.');
+if (!movies.movies.some((movie) => movie.title === 'Back to the Future')) failures.push('Missing Back to the Future potential listing.');
+if (!movies.movies.some((movie) => movie.title === 'Jaws')) failures.push('Missing Jaws potential listing.');
 if (!movies.featured || !movies.movies.some((movie) => movie.id === movies.featured)) failures.push('Featured movie id must match a movie.');
 if (!movies.movies.some((movie) => movie.tmdbQuery || movie.tmdbId)) failures.push('At least one movie should be configured for TMDB poster enrichment.');
+
+if (html.includes('SAU')) failures.push('SAU references should not appear while the venue copy is intentionally generic.');
+for (const text of ['Pets are not allowed', 'Alcohol is not allowed', '$7', '$4', '$5', '$12']) {
+  if (!html.includes(text)) failures.push(`Missing required updated operations copy: ${text}`);
+}
 
 const forbidden = [/sk-[A-Za-z0-9]/, /api[_-]?key\s*[:=]/i, /password\s*[:=]/i, /BEGIN (RSA|OPENSSH|PRIVATE) KEY/];
 for (const [name, content] of [['index.html', html], ['styles.css', css], ['script.js', js]]) {
