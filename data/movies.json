@@ -4,6 +4,8 @@
     {
       "id": "spider-man-brand-new-day",
       "title": "Spider-Man: Brand New Day",
+      "tmdbQuery": "Spider-Man: Brand New Day",
+      "releaseYear": 2026,
       "rating": "PG-13",
       "runtime": "TBD",
       "date": "Preview Listing",
@@ -11,11 +13,16 @@
       "category": "Opening Weekend",
       "posterStyle": "web",
       "summary": "A sample blockbuster listing showing how future new-release nights will appear once official showtimes are published.",
-      "trailerUrl": "#tickets"
+      "trailerUrl": "#tickets",
+      "tmdbId": 969681,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
+      "tmdbUrl": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": "the-odyssey",
       "title": "The Odyssey",
+      "tmdbQuery": "The Odyssey",
+      "releaseYear": 2026,
       "rating": "TBD",
       "runtime": "TBD",
       "date": "Coming Soon",
@@ -23,7 +30,10 @@
       "category": "Coming Soon",
       "posterStyle": "epic",
       "summary": "A premium preview card for major event films, double features, and campus-friendly opening weekends.",
-      "trailerUrl": "#tickets"
+      "trailerUrl": "#tickets",
+      "tmdbId": 1368337,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "tmdbUrl": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": "family-night",

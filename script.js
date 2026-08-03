@@ -20,8 +20,12 @@ primaryNav?.addEventListener('click', (event) => {
 function movieCard(movie, featured = false) {
   const article = document.createElement('article');
   article.className = featured ? 'movie-card featured-card' : 'movie-card';
+  const posterContent = movie.posterUrl
+    ? `<img src="${escapeAttribute(movie.posterUrl)}" alt="${escapeHtml(movie.title)} poster" loading="lazy" decoding="async">`
+    : '';
+  const posterLabel = movie.posterUrl ? `Poster for ${movie.title}` : `Stylized placeholder poster for ${movie.title}`;
   article.innerHTML = `
-    <div class="poster ${movie.posterStyle}" data-title="${escapeHtml(movie.title)}" role="img" aria-label="Stylized placeholder poster for ${escapeHtml(movie.title)}"></div>
+    <div class="poster ${movie.posterStyle}${movie.posterUrl ? ' poster-real' : ''}" data-title="${escapeHtml(movie.title)}" role="img" aria-label="${escapeHtml(posterLabel)}">${posterContent}</div>
     <div class="movie-body">
       <div class="movie-meta">
         <span class="badge">${escapeHtml(movie.category)}</span>
@@ -33,7 +37,7 @@ function movieCard(movie, featured = false) {
       <p>${escapeHtml(movie.summary)}</p>
       <div class="movie-actions">
         <a class="button button-primary" href="#tickets">Tickets Coming Soon</a>
-        <a class="button button-ghost" href="${escapeAttribute(movie.trailerUrl)}">Trailer / Details</a>
+        <a class="button button-ghost" href="${escapeAttribute(movie.tmdbUrl || movie.trailerUrl)}">Trailer / Details</a>
       </div>
     </div>
   `;

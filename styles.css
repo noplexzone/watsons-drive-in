@@ -107,6 +107,9 @@ p { color: var(--muted); line-height: 1.7; }
 .movie-card { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; min-height: 100%; }
 .poster { min-height: 275px; display: flex; align-items: end; padding: 1rem; background: linear-gradient(145deg, #1b0710, #ff174d); position: relative; }
 .poster::before { content: attr(data-title); position: absolute; inset: 1rem; display: flex; align-items: center; justify-content: center; text-align: center; color: white; font-weight: 1000; font-size: 1.7rem; line-height: .95; text-transform: uppercase; text-shadow: 0 2px 18px rgba(0,0,0,.75); }
+.poster-real { padding: 0; background: #12060b; }
+.poster-real::before { display: none; }
+.poster-real img { width: 100%; height: 100%; min-height: 275px; object-fit: cover; display: block; }
 .poster.web { background: radial-gradient(circle at 20% 20%, #fff, transparent 3px), repeating-linear-gradient(35deg, rgba(255,255,255,.25) 0 1px, transparent 1px 22px), linear-gradient(145deg, #061531, #be123c); }
 .poster.epic { background: linear-gradient(150deg, #0f172a, #7c2d12 58%, #facc15); }
 .poster.family { background: linear-gradient(145deg, #1d4ed8, #db2777); }
@@ -141,6 +144,7 @@ summary { cursor: pointer; color: var(--cream); font-weight: 900; }
 .contact-links a { border: 1px solid var(--line); border-radius: 999px; padding: .65rem .9rem; color: var(--muted); text-decoration: none; }
 .site-footer { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 3rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 1rem; }
 .site-footer p { margin: 0; font-size: .9rem; }
+.tmdb-attribution { flex-basis: 100%; color: #9f8585; }
 
 @media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
