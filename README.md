@@ -50,7 +50,7 @@ Use one of these configurations:
 - Framework preset: None
 - Build command: `npm run build`
 - Build output directory: `dist`
-- Deploy command: blank / Cloudflare default Pages asset upload
+- Deploy command: `npm run deploy`
 
 **If Cloudflare requires an explicit deploy command:**
 
@@ -58,4 +58,18 @@ Use one of these configurations:
 
 ## Current Cloudflare build failure note
 
-If the build log says `Executing user deploy command`, remove that deploy command in Cloudflare Pages settings. The Git-connected Pages build already performs the deployment after the build command succeeds. A custom deploy command causes Wrangler to authenticate inside the build and may fail with Cloudflare API token permission errors.
+If Cloudflare requires a deploy command, use `npm run deploy`. That script builds the static site into `dist/` and then runs `wrangler pages deploy dist --project-name=watsons-drive-in --branch=main`. If it fails with Cloudflare API `Authentication error [code: 10000]`, the `CLOUDFLARE_API_TOKEN` used by the Pages project lacks the required Pages permission; update the token rather than changing site code.
+
+### Required API token permissions
+
+For the explicit Wrangler deploy command, the `CLOUDFLARE_API_TOKEN` in Cloudflare Pages must allow deployments for the account/project. Minimum practical permissions:
+
+- Account → Cloudflare Pages → Edit
+- Account → Account Settings → Read
+
+To attach `watsons-drive-in.noplexzone.com`, the token also needs DNS/custom-domain authority for the zone, usually:
+
+- Zone → DNS → Edit
+- Zone → Zone → Read
+
+Scope the token to the No Plex Zone account and `noplexzone.com` zone.
