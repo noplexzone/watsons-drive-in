@@ -1,0 +1,53 @@
+{
+  "featured": "spider-man-brand-new-day",
+  "movies": [
+    {
+      "id": "spider-man-brand-new-day",
+      "title": "Spider-Man: Brand New Day",
+      "rating": "PG-13",
+      "runtime": "TBD",
+      "date": "Preview Listing",
+      "time": "Dusk",
+      "category": "Opening Weekend",
+      "posterStyle": "web",
+      "summary": "A sample blockbuster listing showing how future new-release nights will appear once official showtimes are published.",
+      "trailerUrl": "#tickets"
+    },
+    {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "rating": "TBD",
+      "runtime": "TBD",
+      "date": "Coming Soon",
+      "time": "Dusk",
+      "category": "Coming Soon",
+      "posterStyle": "epic",
+      "summary": "A premium preview card for major event films, double features, and campus-friendly opening weekends.",
+      "trailerUrl": "#tickets"
+    },
+    {
+      "id": "family-night",
+      "title": "Retro Family Night",
+      "rating": "PG",
+      "runtime": "Double Feature",
+      "date": "Future Event",
+      "time": "Dusk",
+      "category": "Family Night",
+      "posterStyle": "family",
+      "summary": "Classic crowd-pleasers, cartoons before the feature, and a low-stress night out for families.",
+      "trailerUrl": "#events"
+    },
+    {
+      "id": "midnight-monster-rally",
+      "title": "Midnight Monster Rally",
+      "rating": "PG-13",
+      "runtime": "Late Show",
+      "date": "Future Event",
+      "time": "Late Night",
+      "category": "Horror Night",
+      "posterStyle": "monster",
+      "summary": "A neon-lit late-night series built for SAU students, horror fans, and classic creature-feature crowds.",
+      "trailerUrl": "#events"
+    }
+  ]
+}

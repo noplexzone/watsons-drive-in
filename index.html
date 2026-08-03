@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Watson’s Drive-In is a planned nostalgic 1950s-style drive-in theater coming soon near Magnolia, Arkansas.">
+    <title>Watson’s Drive-In | Coming Soon Near Magnolia, AR</title>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-mark" href="#hero" aria-label="Watson’s Drive-In home">
+        <span class="brand-script">Watson’s</span>
+        <span class="brand-block">Drive-In</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#showtimes">Movies</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#concessions">Concessions</a>
+        <a href="#visit">Plan Visit</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Coming soon near Magnolia, Arkansas</p>
+          <h1><span>Watson’s</span> Drive-In</h1>
+          <p class="hero-lede">A new old-fashioned night out: one big screen, neon nights, classic concessions, and movies under the Arkansas sky.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#showtimes">View Upcoming Shows</a>
+            <a class="button button-ghost" href="#visit">Plan Your Visit</a>
+          </div>
+        </div>
+        <div class="marquee-card" aria-label="Watson’s Drive-In neon marquee illustration">
+          <div class="marquee-top">Tonight</div>
+          <div class="marquee-title">Feature Preview</div>
+          <div class="marquee-lines">
+            <span>Gates before dusk</span>
+            <span>FM radio audio</span>
+            <span>Classic snacks</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-strip" aria-label="Venue highlights">
+        <div><strong>1 Screen</strong><span>Big-screen outdoor cinema</span></div>
+        <div><strong>Dusk Shows</strong><span>Times posted by event</span></div>
+        <div><strong>QR Tickets</strong><span>Planned for launch</span></div>
+        <div><strong>SAU Friendly</strong><span>Campus nights welcome</span></div>
+      </section>
+
+      <section id="featured" class="section-shell split-section">
+        <div>
+          <p class="eyebrow">Featured showing</p>
+          <h2>Tonight’s Show will live here.</h2>
+          <p>Sample listings are shown for planning purposes. Official showtimes, trailers, and ticket links will be posted closer to opening.</p>
+        </div>
+        <article id="featured-movie" class="featured-movie loading-card">Loading feature preview…</article>
+      </section>
+
+      <section id="showtimes" class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Now showing / coming soon</p>
+          <h2>Built for new releases, classics, double features, and campus nights.</h2>
+          <p>Movie data is static for now and ready to connect to live listings later.</p>
+        </div>
+        <div id="movie-grid" class="movie-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="tickets" class="section-shell tickets-section">
+        <div class="section-heading">
+          <p class="eyebrow">Tickets</p>
+          <h2>Simple pricing now. Built-in ticketing later.</h2>
+          <p>Online checkout and QR-code check-in are planned. Until the system is selected, purchase buttons stay honest: Tickets Coming Soon.</p>
+        </div>
+        <div class="pricing-grid">
+          <article><span>Adults</span><strong>$12</strong><small>General admission</small></article>
+          <article><span>Kids</span><strong>$6</strong><small>Child admission</small></article>
+          <article><span>Seniors</span><strong>$8</strong><small>Senior admission</small></article>
+          <article><span>Season Passes</span><strong>TBD</strong><small>Planned after launch</small></article>
+        </div>
+        <div class="ticket-preview">
+          <span class="qr-box" aria-hidden="true"></span>
+          <div>
+            <h3>QR tickets are planned.</h3>
+            <p>Future tickets will support mobile purchase, QR confirmation, and fast gate check-in. Reserved parking is not planned for the first version.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="concessions" class="section-shell split-section concessions-section">
+        <div>
+          <p class="eyebrow">Concessions</p>
+          <h2>Popcorn, candy, soda — the classics first.</h2>
+          <p>The concession stand should feel as central as the screen. Mobile Ordering Coming Soon will let guests order from their car once payment and fulfillment are ready.</p>
+          <a class="button button-ghost" href="#contact">Concession questions</a>
+        </div>
+        <div class="menu-board">
+          <h3>Sample Menu</h3>
+          <p><span>Buttered Popcorn</span><strong>$TBD</strong></p>
+          <p><span>Box Candy</span><strong>$TBD</strong></p>
+          <p><span>Fountain Soda</span><strong>$TBD</strong></p>
+          <p><span>Combo Deals</span><strong>Coming Soon</strong></p>
+        </div>
+      </section>
+
+      <section id="visit" class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Plan your visit</p>
+          <h2>The default drive-in rules, ready to refine when operations are final.</h2>
+        </div>
+        <div class="visit-grid">
+          <article><h3>Gates</h3><p>Gates open before showtime so guests can park, visit concessions, and settle in.</p></article>
+          <article><h3>Showtime</h3><p>Movies begin at dusk unless otherwise posted.</p></article>
+          <article><h3>Audio</h3><p>Movie audio will be broadcast over FM radio. Bring a working car radio or portable FM receiver.</p></article>
+          <article><h3>Vehicles</h3><p>Headlights stay off during the movie. Larger vehicles may be directed to designated rows.</p></article>
+          <article><h3>Pets</h3><p>Leashed, well-behaved pets are welcome in designated areas. Owners handle cleanup and behavior.</p></article>
+          <article><h3>Weather</h3><p>Shows may continue in light rain but may be delayed or canceled for severe weather.</p></article>
+        </div>
+      </section>
+
+      <section id="events" class="section-shell events-section">
+        <div class="section-heading">
+          <p class="eyebrow">Events & rentals</p>
+          <h2>Campus nights, birthdays, fundraisers, and private screen rentals.</h2>
+          <p>Watson’s Drive-In is being planned as a community venue as much as a theater.</p>
+        </div>
+        <div class="cards-three">
+          <article><h3>Private Events</h3><p>Company nights, church groups, school events, and community fundraisers.</p><a href="#contact">Booking info coming soon</a></article>
+          <article><h3>Birthday Parties</h3><p>Reserved celebration nights with movie, concessions, and group-friendly arrival flow.</p><a href="#contact">Party packages coming soon</a></article>
+          <article><h3>SAU Nights</h3><p>Student-friendly late shows, horror nights, classics, and campus organization partnerships.</p><a href="#contact">Partner with us</a></article>
+        </div>
+      </section>
+
+      <section id="sponsorship" class="section-shell split-section">
+        <div>
+          <p class="eyebrow">Advertise on-screen</p>
+          <h2>Local sponsorships will be part of the pre-show experience.</h2>
+          <p>Future packages may include pre-show ads, event sponsorships, screen sponsorships, and local business partnerships.</p>
+        </div>
+        <div class="ad-card">Your business<br><span>on the big screen</span></div>
+      </section>
+
+      <section id="employment" class="section-shell employment-section">
+        <p class="eyebrow">Employment</p>
+        <h2>Jobs will be posted closer to opening.</h2>
+        <p>Expected roles may include box office, concessions, parking attendants, projection/operations, event staff, and cleanup crew.</p>
+      </section>
+
+      <section id="faq" class="section-shell faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ & rules</p>
+          <h2>Clear expectations before guests pull in.</h2>
+        </div>
+        <details open><summary>Can I buy tickets now?</summary><p>No. Tickets Coming Soon. The first live version is planned to support built-in purchasing and QR check-in.</p></details>
+        <details><summary>Can I order food from my car?</summary><p>Mobile ordering is planned. The first static website previews the menu without accepting real orders.</p></details>
+        <details><summary>Is outside food allowed?</summary><p>Outside food and drinks may be limited. Guests are encouraged to support the concession stand.</p></details>
+        <details><summary>Will alcohol be allowed?</summary><p>Outside alcohol is not permitted. Event-specific policies may be posted when applicable.</p></details>
+        <details><summary>What happens when weather turns bad?</summary><p>Weather updates will be posted before showtime when needed. Severe weather may delay or cancel shows.</p></details>
+      </section>
+
+      <section id="location" class="section-shell location-section">
+        <p class="eyebrow">Location</p>
+        <h2>Planned for the Magnolia area.</h2>
+        <p>Watson’s Drive-In is coming soon near Magnolia, Arkansas. An exact address and map will be added once the site is ready for public release.</p>
+        <div class="map-placeholder">Map coming later</div>
+      </section>
+
+      <section id="contact" class="section-shell contact-section">
+        <div>
+          <p class="eyebrow">Contact & updates</p>
+          <h2>Official contact information coming soon.</h2>
+          <p>No newsletter, SMS list, or live form is active yet. Social accounts and contact details can be added when they are ready.</p>
+        </div>
+        <div class="contact-links" aria-label="Future contact links">
+          <a aria-disabled="true">Facebook</a>
+          <a aria-disabled="true">Instagram</a>
+          <a aria-disabled="true">TikTok</a>
+          <a aria-disabled="true">Gift Cards</a>
+          <a aria-disabled="true">Merch</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Watson’s Drive-In. Coming soon near Magnolia, Arkansas.</p>
+      <p>Static preview site. Official showtimes, ticketing, and ordering are not live yet.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
