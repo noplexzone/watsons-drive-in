@@ -38,3 +38,20 @@ For the current static version:
 - Temporary custom domain target: `watsons-drive-in.noplexzone.com`
 
 Use the temporary No Plex Zone subdomain until Watson’s Drive-In has its official domain.
+
+### Cloudflare Pages dashboard settings
+
+This is a static Pages site, not a Worker. Do **not** use `npx wrangler deploy`; that command deploys Workers and fails here with `Missing entry-point to Worker script or to assets directory`.
+
+Use one of these configurations:
+
+**Recommended Git-connected Pages setup:**
+
+- Framework preset: None
+- Build command: `exit 0` or blank
+- Build output directory: `/`
+- Deploy command: blank / Cloudflare default Pages asset upload
+
+**If Cloudflare requires an explicit deploy command:**
+
+- Deploy command: `npx wrangler pages deploy . --project-name=watsons-drive-in`

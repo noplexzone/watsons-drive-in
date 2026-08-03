@@ -5,6 +5,7 @@
   "description": "Static first-version website for Watson’s Drive-In near Magnolia, Arkansas.",
   "scripts": {
     "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
-    "check": "node scripts/check-site.mjs"
+    "check": "node scripts/check-site.mjs",
+    "deploy:pages": "wrangler pages deploy . --project-name=watsons-drive-in"
   }
 }
